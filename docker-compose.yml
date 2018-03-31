@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  payroll:
+    image: payroll
+    build:
+      context: .
+      dockerfile: Payroll/Dockerfile
