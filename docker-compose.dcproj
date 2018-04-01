@@ -4,8 +4,9 @@
     <ProjectVersion>2.0</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>778c6560-f9ca-43f3-9ad3-6eb7c0cd411b</ProjectGuid>
-    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>http://localhost:{ServicePort}/api/values</DockerServiceUrl>
+    <DockerLaunchAction>None</DockerLaunchAction>
+    <DockerServiceUrl>
+    </DockerServiceUrl>
     <DockerServiceName>payroll</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>

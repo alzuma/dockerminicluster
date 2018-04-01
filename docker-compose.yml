@@ -1,8 +1,28 @@
 version: '3'
 
 services:
+  nginx:
+    image: itcorplv/repo:nginx
+    ports:
+      - 443:443
+      - 80:80
+    restart: always
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    depends_on:
+      - payroll
+      - account
+    restart: always
   payroll:
-    image: payroll
+    image: itcorplv/repo:payroll
     build:
       context: .
       dockerfile: Payroll/Dockerfile
+    restart: always
+  account:
+    image: itcorplv/repo:account
+    build:
+      context: .
+      dockerfile: Account/Dockerfile
+    restart: always

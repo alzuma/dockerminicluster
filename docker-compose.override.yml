@@ -4,5 +4,6 @@ services:
   payroll:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-    ports:
-      - "80"
+  account:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
